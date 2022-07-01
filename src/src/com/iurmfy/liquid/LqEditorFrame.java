@@ -2,17 +2,12 @@ package com.iurmfy.liquid;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowFocusListener;
-import java.awt.event.WindowListener;
-import java.awt.event.WindowStateListener;
 
 /**
  * lq 的编辑器界面
  */
 public class LqEditorFrame extends JFrame
 {
-
     // 窗体初始化
     public LqEditorFrame()
     {
@@ -25,12 +20,16 @@ public class LqEditorFrame extends JFrame
 
         setTitle("Liquid Node Editor");
 
-        // 加载渲染器
-        add(new LqRender());
+        //setLayout(new FlowLayout());
 
-        setVisible(true);
+        // 加载渲染器
+        JPanel render = new LqRender();
+        render.add(new JButton("Hello"));
+        add(render);
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        setVisible(true);
     }
 
     // 使窗体局中

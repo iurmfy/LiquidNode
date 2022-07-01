@@ -14,20 +14,17 @@ import java.net.URL;
  *
  * 流式布局
  */
-public class LqRender extends Canvas
+public class LqRender extends JPanel
 {
     @Override
-    public void paint(Graphics g)
+    protected void paintComponent(Graphics g)
     {
-        super.paint(g);
+        super.paintComponent(g);
         Graphics2D g2 = (Graphics2D) g;
 
         Image image = Toolkit.getDefaultToolkit().getImage("resources/Demo.JPG");
-        g2.drawImage(image,0, 0,
+        g2.drawImage(image,50, 0,
                 image.getWidth(this)/8 ,
                 image.getHeight(this)/8,this);
     }
-
-
-
 }
