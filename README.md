@@ -2,3 +2,5 @@
 
 #### 介绍
 Liqudi Node Framework
+
+![picture](/resources/Demo.JPG)

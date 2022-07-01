@@ -1,3 +1,5 @@
+
+
 # 目标实现
 
 
@@ -43,3 +45,13 @@ public class LqRender extends Canvas
 }
 ```
 
+```java
+/*JComponent*/
+
+JPanel contentPane = new JPanel(); 
+//把其它组件添加到Jpanel中; 
+frame.setContentPane(contentPane); 
+//把contentPane对象设置成为frame的内容面板 
+```
+
+建立一个Jpanel或 JDesktopPane之类的中间容器，把组件添加到容器中，用setContentPane()方法把该容器置为JFrame的内容面板
