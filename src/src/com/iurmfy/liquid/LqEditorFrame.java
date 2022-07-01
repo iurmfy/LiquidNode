@@ -17,18 +17,16 @@ public class LqEditorFrame extends JFrame
 
         setSize(width, height);
         setLocation(toMiddle(width, height));
-
         setTitle("Liquid Node Editor");
 
-        //setLayout(new FlowLayout());
-
         // 加载渲染器
-        JPanel render = new LqRender();
-        render.add(new JButton("Hello"));
+        LqRender render = new LqRender();
+        render.setLayout(new FlowLayout());
         add(render);
 
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        render.add(new JButton("G"));
 
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
     }
 
