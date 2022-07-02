@@ -13,10 +13,10 @@ import java.awt.image.ImageObserver;
 public class LqNode
 {
     // 图像内容
-    private Image image;
+    private final Image image;
     // 坐标
     private Point point = new Point();
-    // 图像的范围
+    // 图像的范围 
     private Dimension dimension = new Dimension();
 
     public LqNode(String filePath, ImageObserver imageObserver)
@@ -37,12 +37,12 @@ public class LqNode
         point.setLocation(imagePoint);
     }
 
-    public void setDimension(Dimension dimension)
+    public void setImageDimension(Dimension dimension)
     {
         this.dimension = dimension;
     }
 
-    public Dimension getDimension()
+    public Dimension getImageDimension()
     {
         return dimension;
     }
@@ -62,8 +62,4 @@ public class LqNode
         return image;
     }
 
-    public void setImage(Image image)
-    {
-        this.image = image;
-    }
 }

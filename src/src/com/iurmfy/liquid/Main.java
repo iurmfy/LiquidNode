@@ -13,3 +13,11 @@ public class Main
         new LqEditorFrame();
     }
 }
+
+class Demo2
+{
+    public static void main(String[] args)
+    {
+        new LqFrame();
+    }
+}
