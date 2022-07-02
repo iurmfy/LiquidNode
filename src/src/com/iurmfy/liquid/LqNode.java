@@ -2,16 +2,15 @@ package com.iurmfy.liquid;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.geom.Rectangle2D;
 import java.awt.image.ImageObserver;
 
 /**
+ * lq 节点对象
+ *
  * 在渲染器中渲染
  * 出现在窗体中
- *
- * 人物身体的一部分
  */
-public class LqPart
+public class LqNode
 {
     // 图像内容
     private Image image;
@@ -20,7 +19,16 @@ public class LqPart
     // 图像的范围
     private Dimension dimension = new Dimension();
 
-    public LqPart(String filePath, Point imagePoint, ImageObserver imageObserver)
+    public LqNode(String filePath, ImageObserver imageObserver)
+    {
+        // 加载图片
+        image = new ImageIcon(filePath).getImage();
+        dimension.setSize(image.getWidth(imageObserver)
+                ,image.getHeight(imageObserver));
+        point.setLocation(new Point());
+    }
+
+    public LqNode(String filePath, Point imagePoint, ImageObserver imageObserver)
     {
         // 加载图片
         image = new ImageIcon(filePath).getImage();
@@ -47,18 +55,6 @@ public class LqPart
     public Point getImagePoint()
     {
         return point;
-    }
-
-    public void imageMoveTo(Point point)
-    {
-        point.x += point.x;
-        point.y += point.y;
-    }
-
-    public void imageMoveTo(int pX, int pY)
-    {
-        point.x += pX;
-        point.y += pY;
     }
 
     public Image getImage()

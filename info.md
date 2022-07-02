@@ -55,3 +55,38 @@ frame.setContentPane(contentPane);
 ```
 
 建立一个Jpanel或 JDesktopPane之类的中间容器，把组件添加到容器中，用setContentPane()方法把该容器置为JFrame的内容面板
+
+
+
+#### 7.2
+
+图像移动
+
+在专门的事件监测类中实现
+
+
+
+运动需要数据
+
+1. 起点坐标
+2. 鼠标点起初位置
+3. 鼠标的终点位置
+
+
+
+##### LqFrame 窗体类
+
+为渲染器提供载体
+
+
+
+##### LqRender 渲染器
+
+继承与JPanel类 为渲染对象LqNode 使用
+
+内建 renderBuffer
+
+储存所要绘制的内容
+
+
+
