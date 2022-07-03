@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/LiquidNodeEditor/LiquidNodeEditor.iml" filepath="$PROJECT_DIR$/LiquidNodeEditor/LiquidNodeEditor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LiquidNodeStage/LiquidNodeStage.iml" filepath="$PROJECT_DIR$/LiquidNodeStage/LiquidNodeStage.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/liquid-node.iml" filepath="$PROJECT_DIR$/.idea/liquid-node.iml" />
-      <module fileurl="file://$PROJECT_DIR$/src/src.iml" filepath="$PROJECT_DIR$/src/src.iml" />
     </modules>
   </component>
 </project>

@@ -1,5 +1,3 @@
-package com.iurmfy.liquid;
-
 import javax.swing.*;
 import java.awt.*;
 
